@@ -1,0 +1,19 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "part-2 Phase 3 Assessment",
+  "main": "grocery.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ontoneio/phase-3-challenge.git"
+  },
+  "author": "Jonathan A. Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ontoneio/phase-3-challenge/issues"
+  },
+  "homepage": "https://github.com/ontoneio/phase-3-challenge#readme"
+}
