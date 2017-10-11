@@ -13,7 +13,8 @@ app.get(`/api/days/:day`, (request, response) => {
   const daysOfWeek = {monday: 1, tuesday:2, wednesday: 3, thursday: 4, friday: 5, saturday: 6, sunday: 7}
   const day = request.params.day.toLowerCase()
   const routePath = request.route['path'].replace(/:day/, day)
-
+  response.setHeader(`Content-Type`, `text/plain`)
+  
   if (!daysOfWeek[day]){
     response.status(400).send(
     `request: GET ${routePath}\nresponse: '${daysOfWeek[day]}' is not a valid day!\nstatus: 400`)
