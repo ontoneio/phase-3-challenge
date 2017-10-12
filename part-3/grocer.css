@@ -113,4 +113,67 @@ body {
 .item-price {
   flex: 0;
 }
-/*  */
+/* MODAL BOX */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  background-color: rgba(0,0,0,.45);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-open{
+  display: flex;
+}
+.modal-cart{
+  display: grid;
+  overflow: auto;
+  min-width: 50vw;
+  height: auto;
+  background-color: white;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'cart . . close'
+  'item item item item'
+  'clear . lbl ttl';
+  align-items: center;
+  justify-items:center;
+}
+.cart-name {
+  grid-area: cart;
+}
+.close {
+  grid-area: close; 
+}
+.cart-content {
+  grid-area: item;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5% 0
+}
+.modal-item{
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  margin: 0 12%;
+  font-size: 20px;
+  align-items: center;
+}
+.clear {
+  grid-area: clear;
+}
+.label {
+  grid-area: lbl;
+}
+.total {
+  grid-area: ttl;
+}
+
