@@ -152,6 +152,11 @@ body {
 .close {
   grid-area: close; 
 }
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  color: blue;
+}
 .cart-content {
   grid-area: item;
   display: flex;
