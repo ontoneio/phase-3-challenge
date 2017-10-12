@@ -128,9 +128,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.modal-open{
+/* .modal-open{
   display: flex;
-}
+} */
 .modal-cart{
   display: grid;
   overflow: auto;
