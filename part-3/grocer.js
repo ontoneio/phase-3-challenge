@@ -17,10 +17,15 @@ closeModal.addEventListener('click', () => modal.style.display = 'none')
 // ADD ITEMS TO CART
 cartItemCount.innerHTML = `(${itemsInCart})`
 
-const addCartItems = () => {
-      
+const getItem = () => {
+  const data = document.querySelector('.item');
+  const itemObj = {
+    name: data.children[0].innerHTML,
+    price: data.children[1].innerHTML
+  }
+  return itemObj
 }
-
+getItem()
 
 addToCart.forEach(button => {
   button.addEventListener('click', () => {
