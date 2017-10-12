@@ -185,9 +185,9 @@ Clicking on the "Cart" button opens the cart modal.
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-3/` folder
-- [ ] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
-- [ ] __10:__ HTML, CSS, and JS are separated into their own files.
+- [x] __10:__ All files are stored under the `part-3/` folder
+- [x] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
+- [x] __10:__ HTML, CSS, and JS are separated into their own files.
 - [ ] __20:__ Clicking on a section in the "Sections" sidebar will jump to that section in the page
 - [ ] __20:__ Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
 - [ ] __20:__ Clicking on the "Cart" button will show the cart modal with a list of all items added

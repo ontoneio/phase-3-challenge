@@ -84,7 +84,7 @@ body {
 /* ITEM LIST */
 .item-section {
   list-style-type: none;
-  margin: 32px 0 0;
+  margin: 300px 0 0;
   padding: 0;
 }
 
@@ -169,6 +169,8 @@ body {
 }
 .clear {
   grid-area: clear;
+  font-size: 18px;
+  padding: 8px;
 }
 .label {
   grid-area: lbl;

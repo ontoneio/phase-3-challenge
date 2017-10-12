@@ -19,7 +19,7 @@
 
     <!-- START OF MODAL -->
 
-    <div id"cart-modal" class="modal modal-open">
+    <div id"cart-modal" class="modal">
       <div id="cart-content" class="modal-cart">
 
         <h1 class="cart-name">Cart</h1>
@@ -28,10 +28,10 @@
         
         <div class="cart-content">
 
-          <div class="modal-item">
+          <!-- <div class="modal-item">
             <div class="item-name">Item Name</div> 
             <div class="item-price">$3.44</div>
-          </div>
+          </div> -->
          
 
         </div> <!-- END OF MODAL -->
@@ -50,14 +50,14 @@
       <div class="sidebar">
         <ul>
           <h4>Sections</h4>
-          <li>Produce</li>
-          <li>Deli</li>
-          <li>Frozen</li>
+          <a href="#produce"><li>Produce</li></a>
+          <a href="#deli"><li>Deli</li></a>
+          <a href="#frozen"><li>Frozen</li></a>
         </ul>
       </div>
       <div class="content">
         <h1>Groceries</h1>
-        <ul class="item-section">
+        <ul class="item-section" id="produce">
           <h3>Produce</h3>
           <li class="item flex flex-row-between">
             <span class="item-name">Onions</span>
@@ -76,7 +76,7 @@
           </li>
         </ul>
 
-        <ul class="item-section">
+        <ul class="item-section" id="deli">
           <h3>Deli</h3>
           <li class="item flex flex-row-between">
             <span class="item-name">Cold Cuts</span>
@@ -85,7 +85,7 @@
           </li>
         </ul>
 
-        <ul class="item-section">
+        <ul class="item-section" id="frozen">
           <h3>Frozen</h3>
           <li class="item flex flex-row-between">
             <span class="item-name">Orange Juice</span>
