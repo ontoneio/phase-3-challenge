@@ -35,7 +35,7 @@ app.post(`/api/array/concat`, (request, response) => {
 
     if(!Array.isArray(array1) || !Array.isArray(array2)) {
       response.status(400).send(
-        `request: POST ${routeString}\nrequest body params: ${JSON.stringify(request.body)}\nrequest content type: application/json\nresponse status code: 400\nresponse: {error: "Input data should be type Array."}\nresponse content type: application/json`)
+        `request: POST ${routeString}\nrequest body params: ${JSON.stringify(request.body)}\nrequest content type: application/json\nresponse status code: 400\nchresponse: {error: "Input data should be type Array."}\nresponse content type: application/json`)
     }
     else {
       response.status(200).send(
